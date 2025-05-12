@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F4F3;
+}
+
+header.main-header {
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+header.main-header .main-logo img {
+    width: 100px;
+}
+
+header.main-header .main-nav ul {
+    display: flex;
+    justify-content: c;
+    gap: 1.5rem 2rem ;
+    padding-left: 0;
+}
+
+header.main-header .main-nav li {
+    list-style-type: none;
+}
+
+header.main-header .main-nav li a {
+    border-radius: 9999px;
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #5B2333;
+    transition: all 0.3s ease-in-out;
+}
+
+header.main-header .main-nav li a:hover {
+    background-color: #5B2333;
+    color: #F7F4F3;
+}
+header.main-header .login-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem 2rem ;
+    padding-left: 0;
+    
+}
+
+header.main-header .login-nav li {
+    list-style-type: none;
+}
+
+header.main-header .login-nav li a {
+    border-radius: 999px;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.7rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #5B2333;
+    transition: all 0.3s ease-in-out;
+}
+header.main-header .login-nav li a:hover {
+    background-color: #5B2333;
+    color: #F7F4F3;
+}
+
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .content .content-deskripsi .title {
+    font-size: 3rem;
+    margin-block: 3rem;
+}
+
+main .content .content-deskripsi p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    display: inline-block;
+    background-color: aliceblue;
+}
