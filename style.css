@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/gunung1.jpg);
+    background-size: cover;
+}
+
+header.main-header {
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+   
+}
+header.main-header .main-logo img {
+    width: 100px;
+}
+
+header.main-header .main-nav ul {
+    display: flex;
+    justify-content: c;
+    gap: 1.5rem 2rem ;
+    padding-left: 0;
+}
+
+header.main-header .main-nav li {
+    list-style-type: none;
+}
+
+header.main-header .main-nav li a {
+    border-radius: 9999px;
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+header.main-header .main-nav li a:hover {
+    background-color: #5B2333;
+    color: #F7F4F3;
+}
+header.main-header .login-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem 2rem ;
+    padding-left: 0;
+    
+}
+
+header.main-header .login-nav li {
+    list-style-type: none;
+}
+
+header.main-header .login-nav li a {
+    border-radius: 999px;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.7rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+header.main-header .login-nav li a:hover {
+    background-color: #5B2333;
+    color: #F7F4F3;
+}
+
+
+main {
+    
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    text-align: center;
+}
+
+main .content {
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+main .content .content-deskripsi .title {
+    font-size: 4rem;
+    color: rgb(32, 30, 30);
+    margin-block: 3rem;
+    padding-top: -100px;
+    cursor: pointer;
+
+}   
+
+main .content .content-deskripsi p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button{
+    display: flex;
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 0.7rem;
+    background-color: rgb(40, 38, 38);
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    
+}
+.button button:hover {
+    background-color: transparent;
+    color: white;
+   border: 3px solid rgb(40, 38, 38);
+}

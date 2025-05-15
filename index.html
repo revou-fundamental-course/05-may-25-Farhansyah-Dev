@@ -1,106 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Nusantara-Travel</title>
+    <!-- Nama Halaman Web -->
+    <title>Travel-Nusantara</title>
 
-    <!-- CSS Exsternal -->
-    <link rel="stylesheet" href="./styling/style.css">
-
-    <!-- Icon -->
+    <!-- Icon Website -->
     <link rel="icon" href="./assets/indonesia-map_18338437.png">
+
+    <!-- Styling External CSS -->
+    <link rel="stylesheet" href="./styling/style.css">
 
     <!-- Font External -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    
-
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">\
 
 </head>
 <body>
-    <!-- Start Header -->
-    <header class="main-header">
-        <div class="main-logo">
-            <img src="./assets/icon nusantara-travel.png" alt="Nusantara-Travel">
-        </div>
-
-        <!-- Navigation -->
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Destination</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="login-nav">
-            <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- End Header -->
-
-    <!-- Start Main Content -->
-    <main>
-        <div class="content">
-            <div class="content-deskripsi">
-                <h1 class="title">Travel-Nusantara</h1>
-                <p>Butuh Hiburan dengan pemandangan alam Nusantara? Nusantara-Travel solusinya</p>
-                <p>Jelajahi keindahan alam Indonesia dengan Nusantara-Travel. Temukan destinasi wisata terbaik dan nikmati pengalaman tak terlupakan. Bergabunglah dengan kami untuk menjelajahi keajaiban alam Indonesia.</p>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="logo" tabindex="0">Nusantara-Travel</div>
+                <ul id="navLinks">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#packages">Destinasi</a></li>
+                    <li><a href="#contact">Hubungi-kami</a></li>
+                </ul>
+            <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-        <!-- Home Content -->
-        <section class="home">
-            <header>
-                <!-- <h1>Butuh Hiburan dengan pemandangan alam Nusantara? Nusantara-Travel solusinya</h1>
+    </nav>
 
-                <p>Jelajahi keindahan alam Indonesia dengan Nusantara-Travel. Temukan destinasi wisata terbaik dan nikmati pengalaman tak terlupakan. Bergabunglah dengan kami untuk menjelajahi keajaiban alam Indonesia.</p>
-                <h4>Hiburan tak terlupakan besama kami.</h4> -->
-                <div class="banner-form">
-                    <div class="banner-img">
+    <section  ection class="banner" id="home" aria-label="Travel agency banner slideshow">
+        <div class="slide active" style="background-image:url('./assets/air-terjun.jpg')" role="group" aria-roledescription="slide" aria-label="air terjun pegunungan nusantara">
+            <div class="slide-content">
+                <h1>Nikmati Sejuknya Air Pegunungan</h1>
+                <p>Nikmati air terjun dari pegunungan nusantara terbaik dengan paket eksklusif kami.</p>
+            </div>
+        </div>
 
-                    </div>
-                    <form>
+        <div class="slide" style="background-image:url('./assets/borobudur.jpg')" role="group" aria-roledescription="slide" aria-label="candi borobudur nusantara">
+            <div class="slide-content">
+                <h1>Wisata Sejarah Candi Borobudur</h1>
+                <p>Jelajahi keindahan dan sejarah Candi Borobudur dengan paket wisata kami.</p>
+            </div>
+        </div>
 
-                    </form>
+        <div class="slide" style="background-image:url('./assets/gunung-bromo.jpg')" role="group" aria-roledescription="slide" aria-label="gunung bromo nusantara">
+            <div class="slide-content">
+                <h1>Gunung Bromo yang Menakjubkan</h1>
+                <p>Rasakan keindahan matahari terbit di Gunung Bromo dengan paket wisata kami.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image:url('./assets/kawah-puith.jpg')" role="group" aria-roledescription="slide" aria-label="kawah putih nusantara">
+            <div class="slide-content">
+                <h1>Kawah Putih Bandung</h1>
+                <p>Rasakan keindahan danau kawah putih dengan paket wisata kami.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image:url('./assets/pantai.jpg')" role="group" aria-roledescription="slide" aria-label="pantai selatan nusantara">
+            <div class="slide-content">
+                <h1>Pantai Selatan yang Menawan</h1>
+                <p>Jelajahi keindahan pantai selatan dengan paket wisata kami.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image:url('./assets/komodo-view\ \(1\).jpg')" role="group" aria-roledescription="slide" aria-label="Pulau Komodo">
+            <div class="slide-content">
+                <h1>Wisata Pulau Komodo</h1>
+                <p>Jelajahi keindahan dan keunikan Pulau Komodo dengan paket wisata kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" aria-label="Travel packages">
+        <h2>Destinasi</h2>
+        <div class="packages-grid">
+            <article class="package-card" tabindex="0">
+                <img class="package-img" src="./assets/air-terjun-view.jpg" alt="air terjun view" />
+
+                <div class="package-content">
+                    <h3>Air Terjun Nusantara - Garut</h3>
+                    <p>Nikmati air terjun dengan View yang menawan. Rasakan sensasinya!</p>
+                    <button>Pesan Sekarang</button>
                 </div>
-            </header>
-        </section>
-        <!-- Destinaation Content -->
-        <section>
-            <header>
+            </article>
 
-            </header>
-        </section>
-        <!-- Contact -->
-        <section>
-            <header>
+            <article class="package-card" tabindex="0">
+                <img class="package-img" src="/assets/borobudur-view.jpg" alt="Borobudur View" />
+                <div class="package-content">
+                    <h3>Candi Borobudur - Magelang</h3>
+                    <p>Ketahui & telusuri keunikan dari candi borobudur.</p>
+                    <button>Pesan Sekarang</button>
+                </div>
+            </article>
 
-            </header>
-        </section>
-        <!-- Login -->
-        <section>
-            <header>
+            <article class="package-card" tabindex="0">
+                <img class="package-img" src="./assets/bromo-view.jpg" alt="Bromo View" />
+                <div class="package-content">
+                    <h3>Taman Nasional Bromo - Probolinggo</h3>
+                    <p>Rasakan Keindahan dan Taman Nasional bromo menikmati seluruh wahana, dengan pemandu wisata.</p>
+                    <button>Pesan Sekarang</button>
+                </div>
+            </article>
 
-            </header>
-        </section>
-        <!-- Register -->
-        <section>
-            <header>
+            <article class="package-card" tabindex="0">
+                <img class="package-img" src="./assets/kawah-puith-view.jpg" alt="Kawah Putih View" />
+                <div class="package-content">
+                    <h3>Kawah Putih - Bandung </h3>
+                    <p>Sensasi Alam dengan berswafoto pemandangan Kawah Putih.</p>
+                    <button>Pesan Sekarang</button>
+                </div>
+            </article>
 
-            </header>
-        </section>
-    </main>
-    <!-- End Main Content -->
-    
-    <!-- Start footer -->
-    <footer>
+            <article class="package-card" tabindex="0">
+                <img class="package-img" src="./assets/pantai-selatan-view.jpg" alt="Pantai View" />
+                <div class="package-content">
+                    <h3>Pantai Selatan - Yogyakarta</h3>
+                    <p>Keindahan pasir putih pantai selatan.</p>
+                    <button>Pesan Sekarang</button>
+                </div>
+            </article>
+            
+            <article class="package-card" tabindex="0">
+                <img class="package-img" src="./assets/komodo-view (2).jpg" alt="Komodo-view" />
+                <div class="package-content">
+                    <h3>Taman Nasional Komodo - NTT</h3>
+                    <p>Wisata alam dengan habitat komodo.</p>
+                    <button>Pesan Sekarang</button>
+                </div>
+            </article>   
+        </div>
+    </section>
 
-    </footer>
-    <!-- End Footer -->
+    <section id="contact" aria-label="Contact form for travel inquiries">
+        <div class="container">
+            <h2>Hubungi-kami</h2>
+            <form id="contactForm" novalidate>
+                <label for="nameInput">Nama Kamu</label>
+                <input type="text" id="nameInput" name="name" placeholder="Sahabat Travel Nusantara" aria-required="true" />
+                <label for="emailInput">Email Kamu</label>
+                <input type="email" id="emailInput" name="email" placeholder="travel-nusantara@gmail.com" aria-required="true" />
+                <label for="destInput">Tujuan Destinasi</label>
+                <input type="text" id="destInput" name="destination" placeholder="Kawah Putih - Bandung" aria-required="true" />
+                <button type="submit" aria-label="Submit Contact Form">Submit</button>
+            </form>
+            <div id="formMessage" role="alert" aria-live="polite"></div>
+        </div>
+    </section>
+    <!-- javascript External -->
+    <script src="./js/script.js"></script>
+
 </body>
 </html>
+
