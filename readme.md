@@ -1,3 +1,3 @@
 # Hi There, Welcome to my repo
 ==========================
-#### Belum selesai Guys, Comming soon!
+#### Sudah selesai guys, maaf masih banyak kesalahan, saya masih belajar
